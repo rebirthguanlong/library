@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+<!--    <properties resource="jdbc.properties"></properties>-->
+    <!-- 日志配置-->
+<!--    <settings>-->
+<!--        <setting name="logImpl" value="LOG4J"/>-->
+<!--    </settings>-->
+
+<!--    <plugins>-->
+<!--        <plugin interceptor="com.github.pagehelper.PageHelper">-->
+<!--            &lt;!&ndash;dialect:方言，这里指选择数据库类型 &ndash;&gt;-->
+<!--            <property name="dialect" value="mysql"/>-->
+<!--        </plugin>-->
+<!--    </plugins>-->
+
+    
+    <!-- 加载映射文件 -->
+    <mappers>
+        <mapper resource="mapper/AdminMapper.xml"></mapper>
+        <mapper resource="mapper/BooksMapper.xml"></mapper>
+        <mapper resource="mapper/SortMapper.xml"></mapper>
+        <mapper resource="mapper/SysAdminMapper.xml"></mapper>
+    </mappers>
+</configuration>
